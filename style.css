@@ -1,0 +1,672 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedor__header {
+  background: url(https://source.unsplash.com/J0suKy48jfk);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Dosis", sans-serif;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.contenedor__quienes__somos {
+  background-color: #9893c5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Dosis", sans-serif;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contenedor__tour__planes {
+  background-image: url(https://www.howlanders.com/blog/wp-content/uploads/2021/01/calle-ciudad-colombia.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Dosis", sans-serif;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.center__contenedor__quienes__somos {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.contenedor__quienes__somos img {
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.contenedor__quienes__somos h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgb(240, 228, 228);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contenedor__quienes__somos p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedor__tour__planes h4 {
+  font-size: 50px;
+  color: rgb(243, 235, 235);
+  font-family: "Dosis", sans-serif;
+  font-weight: 900;
+  margin-bottom: 3rem;
+
+  text-align: right;
+}
+
+.main__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__div {
+  padding: 20px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li a {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+header ul li a:hover {
+  background: rgb(152, 108, 194);
+}
+
+header.main__header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  background-color: #ffffff;
+  padding: 0 4rem;
+}
+
+.contenedor__header h1 {
+  font-size: 7rem;
+  color: #ffffff;
+}
+
+.contenedor__header p {
+  font-size: 1.5rem;
+  margin: 15px 30px;
+  color: #ffffff;
+}
+
+.contenedor__header a {
+  font-size: 1.3rem;
+  display: inline-block;
+  padding: 15px 20px;
+  background: rgb(56, 53, 53);
+  color: white;
+  transition: all 0.5s;
+  border: 0.4px solid rgb(114, 69, 69);
+}
+
+.contenedor__header a:hover {
+  background: rgb(83, 71, 71);
+  border: 0.4px solid rgb(92, 73, 73);
+}
+
+.weather__content {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  max-width: 501px;
+  text-align: center;
+  padding: 20px 20px 50px;
+  margin: 10% auto 0;
+  background-color: #546785;
+  border-radius: 9px;
+  margin-top: 11rem;
+  margin-bottom: 3rem;
+}
+
+.weather__content h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.weather__content p {
+  color: #cfcfd9;
+}
+
+.result {
+  margin-bottom: 8%;
+}
+
+.result p {
+  margin: 5px 0 5px;
+}
+
+.result h2 {
+  font-size: 70px;
+  line-height: 70px;
+  margin: -10px 0 10px;
+  color: #fff;
+}
+
+.result h5 {
+  font-size: 21px;
+  margin: 2px;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="submit"],
+form select {
+  width: 100%;
+  margin: 0px 0 25px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #14d4a5;
+  border: 1px solid #14d4a5;
+  color: #fff;
+  font-weight: 600;
+  transition: width 1s;
+}
+
+form input[type="submit"]:hover {
+  width: 50%;
+}
+
+.alert-message {
+  margin: 24px 0 0;
+  color: rgb(199, 72, 216) !important;
+}
+
+.container__form {
+  width: 100%;
+  padding-top: 5%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+
+.container__form h6 {
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+
+.container__form p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container__form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: 700;
+}
+
+.container__form a i {
+  color: orange;
+  margin-right: 10px;
+}
+
+.container__form form .campo,
+textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+
+.container__form form textarea {
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+
+.container__form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: rgb(166, 100, 219);
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.container__form .btn-enviar:hover {
+  background: #be52da;
+}
+
+.contenedor__quienes__somos__galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 3rem;
+}
+
+.contenedor__quienes__somos__galeria__item {
+  max-width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  transition: all 1s;
+}
+
+.galeria__item_text {
+  position: absolute;
+  bottom: 5%;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all 0.9s;
+  left: 5%;
+}
+
+.galeria__item_img::before {
+  content: "";
+  background-color: #000000c9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+}
+
+.contenedor__quienes__somos__galeria__item:hover .galeria__item_img::before {
+  opacity: 0;
+}
+
+.contenedor__quienes__somos__galeria__item:hover .galeria__item_text {
+  opacity: 0;
+}
+
+.center__contenedor__tour__planes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.card__tour__planes {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  transition: all 1s;
+  background-color: #ffffff;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.card__tour__planes__img {
+  overflow: hidden;
+  height: 220px;
+  margin-bottom: 1rem !important;
+  border-radius: 10px;
+  margin: -1rem;
+}
+
+.card__tour__planes__text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.card__tour__planes__text p {
+  font-size: 1.2rem;
+  line-height: 23px;
+  margin-bottom: 1rem;
+}
+
+.card__tour__planes__text .precio {
+  background-color: #d5d5d5;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #4c2a83;
+  width: 100%;
+  display: block;
+  padding: 1rem;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta a {
+  background-color: #343131;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 900;
+}
+
+.card__tour__planes:hover {
+  background-color: #1c1626;
+}
+
+.card__tour__planes:hover h3 {
+  color: #fff;
+}
+
+.card__tour__planes:hover p {
+  color: #fff;
+}
+
+.card__tour__planes .card__tour__planes__img img {
+  max-width: 100%;
+  height: auto;
+  transition: all 1s;
+}
+
+.card__tour__planes:hover .card__tour__planes__img img {
+  transform: scale(1.2);
+}
+
+.content__form {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10rem !important;
+    padding-bottom: 3rem;
+    border: 3px solid #4c2a83;
+    padding: 40px;
+    border-radius: 20px;
+    -webkit-box-shadow: 15px -11px 5px 0px rgb(76 42 131 / 15%);
+    -moz-box-shadow: 15px -11px 5px 0px rgba(76,42,131,0.15);
+    box-shadow: 15px -11px 5px 0px rgb(76 42 131 / 15%);
+    margin-bottom: 50px;
+    }
+
+.content__form h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content__form p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.content__form label {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+  font-weight: 700;
+}
+
+.content__form input {
+  border-radius: 0 !important;
+  border: 1px solid #000 !important;
+  margin-top: 5px !important;
+  height: 50px !important;
+}
+
+.content__form select {
+  border-radius: 0 !important;
+  border: 1px solid #000 !important;
+  margin-top: 5px !important;
+  height: 50px !important;
+}
+
+.center__form p {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.content__form button {
+  width: 200px;
+  background-color: #28274e;
+  margin: 0 auto;
+  height: 40px;
+  border: 0;
+  color: #fff;
+  font-weight: 900;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  background: #0a0a0a;
+  position: relative;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: rgb(219, 200, 200);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #f3ebeb;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-logo img {
+  max-width: 250px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 84px;
+    flex-direction: row-reverse;
+}
+
+footer a{
+color:#4c2a83
+}
+
+footer a:hover{
+    color: #ffffff;
+}
+
+.info__form a{
+   color:#4c2a83
+ }
+    
+.info__form a:hover{
+    color: #000000;
+    }
+
+@media(max-width: 768px){
+footer .container{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column-reverse;
+    align-content: center;
+}
+
+footer img{
+    padding-bottom: 20px;
+}
+
+.contenedor__header h1 {
+    font-size: 2rem;
+}
+
+.contenedor__header p {
+    font-size: 2rem;
+}
+
+.contenedor__header a {
+    margin-top: 20px;
+}
+
+.contenedor__quienes__somos h3 {
+    font-size: 2rem;
+}
+
+.contenedor__quienes__somos p {
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contenedor__quienes__somos__galeria {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.contenedor__tour__planes h4 {
+    text-align: center;
+}
+
+.center__contenedor__tour__planes {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+header ul {
+    display: none;
+}
+
+.logo__div {
+    padding: 0px;
+}
+
+.content__form {
+    width: 80%;
+}
+
+/*contactanos */ 
+.container__form {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.container__form h6 {
+    text-align: center;
+}
+
+.container__form p {
+    text-align: center;
+    padding: 20px;
+}
+
+iframe{
+    width:100%;
+}
+
+.container__form form textarea {
+    min-width: 0px;
+    max-height: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 40px;
+    border: 3px solid #4c2a83;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 15px -11px 5px 0px rgb(76 42 131 / 15%);
+    -moz-box-shadow: 15px -11px 5px 0px rgba(76,42,131,0.15);
+    box-shadow: 15px -11px 5px 0px rgb(76 42 131 / 15%);
+    margin-bottom: 20px;
+}
+}
